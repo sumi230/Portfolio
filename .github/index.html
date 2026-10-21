@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio | Web Developer & UI Designer</title>
+
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Premium Typography: Cabinet Grotesk (Headings) & Plus Jakarta Sans (Body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@800,700,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            display: ['Cabinet Grotesk', 'sans-serif'],
+            sans: ['Plus Jakarta Sans', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              orange: '#FF5416',
+              amber: '#FF7A00',
+              crimson: '#E02612',
+              dark: '#0A0A0B',
+              surface: '#111113',
+              card: '#161619',
+              border: '#232328'
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Radial Glow Gradient inspired by the visual theme */
+    .hero-glow-bg {
+      background: radial-gradient(circle at 50% 20%, #ff4d00 0%, #b82601 35%, #180904 70%, #0A0A0B 100%);
+    }
+    .text-balance {
+      text-wrap: balance;
+    }
+  </style>
+</head>
+<body class="bg-[#050505] text-[#ECECEC] font-sans antialiased selection:bg-brand-orange selection:text-white">
+
+  <!-- Outer Canvas Container -->
+  <div class="max-w-6xl mx-auto px-3 sm:px-6 py-6 md:py-10">
+
+    <!-- Top Rounded Editorial Frame -->
+    <div class="rounded-[2.5rem] bg-brand-surface border border-neutral-800/80 overflow-hidden shadow-2xl">
+
+      <!-- ================= HERO SECTION ================= -->
+      <header class="hero-glow-bg relative px-6 md:px-14 pt-8 pb-16 md:pb-24 border-b border-white/10">
+        
+        <!-- Navigation -->
+        <nav class="flex items-center justify-between gap-4 pb-14 md:pb-20">
+          <a href="#" class="text-white font-display text-xl font-extrabold tracking-tight hover:opacity-90 transition">
+            Sumi<span class="text-brand-orange">.</span>
+          </a>
+
+          <div class="hidden md:flex items-center gap-8 text-sm font-medium text-white/80">
+            <a href="#about" class="hover:text-white transition">About</a>
+            <a href="#services" class="hover:text-white transition">Capabilities</a>
+            <a href="#projects" class="hover:text-white transition">Work</a>
+          </div>
+
+          <a href="mailto:your-email@example.com" class="inline-flex items-center gap-2 pl-5 pr-2 py-1.5 rounded-full bg-white text-black font-semibold text-xs md:text-sm hover:bg-neutral-200 transition shadow-lg group">
+            Get in touch
+            <span class="w-7 h-7 rounded-full bg-brand-orange text-white flex items-center justify-center group-hover:scale-105 transition-transform">
+              ↗
+            </span>
+          </a>
+        </nav>
+
+        <!-- Hero Content Grid -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-end relative z-10 pt-4">
+          
+          <!-- Left Main Heading -->
+          <div class="lg:col-span-7">
+            <span class="text-white/80 text-sm md:text-base font-medium tracking-wide uppercase block mb-3">
+              Hey, I'm a Web Developer
+            </span>
+            <h1 class="font-display text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-black text-white leading-[0.95] tracking-tight">
+              WordPress &amp; Shopify Dev
+            </h1>
+          </div>
+
+          <!-- Right Philosophy / Sub-headline -->
+          <div class="lg:col-span-5 lg:pb-3 lg:pl-6">
+            <h2 class="text-xl md:text-2xl font-bold text-white mb-2 leading-snug">
+              Great web design should feel effortless.
+            </h2>
+            <p class="text-white/75 text-sm md:text-base leading-relaxed">
+              From responsive themes to custom integrations, I engineer high-performance platforms that convert visitors into loyal clients.
+            </p>
+          </div>
+        </div>
+
+        <!-- Capability Ticker Strip (01 - 04) -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16 md:mt-24 pt-8 border-t border-white/15 text-white/90">
+          <div>
+            <span class="text-[11px] font-mono text-white/50 block mb-1">#01</span>
+            <p class="font-bold text-sm md:text-base">WordPress Engineering</p>
+          </div>
+          <div>
+            <span class="text-[11px] font-mono text-white/50 block mb-1">#02</span>
+            <p class="font-bold text-sm md:text-base">Shopify &amp; Liquid</p>
+          </div>
+          <div>
+            <span class="text-[11px] font-mono text-white/50 block mb-1">#03</span>
+            <p class="font-bold text-sm md:text-base">UI/UX Layout Systems</p>
+          </div>
+          <div>
+            <span class="text-[11px] font-mono text-white/50 block mb-1">#04</span>
+            <p class="font-bold text-sm md:text-base">Speed &amp; Conversion</p>
+          </div>
+        </div>
+
+      </header>
+
+      <!-- ================= TECH STRIP ================= -->
+      <div class="bg-[#09090B] px-6 md:px-14 py-6 border-b border-neutral-800/80 flex flex-wrap items-center justify-between gap-6 text-neutral-400 text-xs md:text-sm font-semibold tracking-wide">
+        <span class="text-neutral-500 uppercase tracking-widest text-[11px]">Core Tech Stack</span>
+        <div class="flex items-center gap-2 text-neutral-300">
+          <span class="w-2 h-2 rounded-full bg-brand-orange"></span> WordPress CMS
+        </div>
+        <div class="flex items-center gap-2 text-neutral-300">
+          <span class="w-2 h-2 rounded-full bg-amber-400"></span> Shopify &amp; Liquid
+        </div>
+        <div class="flex items-center gap-2 text-neutral-300">
+          <span class="w-2 h-2 rounded-full bg-emerald-400"></span> Tailwind &amp; Modern JS
+        </div>
+        <div class="flex items-center gap-2 text-neutral-300">
+          <span class="w-2 h-2 rounded-full bg-sky-400"></span> Core Web Vitals
+        </div>
+      </div>
+
+      <!-- ================= EDITORIAL STATEMENT ================= -->
+      <section id="about" class="px-6 md:px-14 py-16 md:py-20 bg-brand-dark">
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
+          <div class="md:col-span-6">
+            <span class="text-xs uppercase font-mono tracking-widest text-brand-orange block mb-3 font-semibold">Behind The Code</span>
+            <h2 class="font-display text-3xl md:text-5xl font-extrabold text-white leading-tight">
+              Shaping Web Experiences That Convert &amp; Perform
+            </h2>
+          </div>
+          <div class="md:col-span-6 md:pl-8 flex flex-col justify-between h-full space-y-6">
+            <p class="text-neutral-300 text-base md:text-lg leading-relaxed">
+              I am a web developer focused on translating brand aesthetics into clean, intuitive, and responsive web systems that resolve real-world business bottlenecks.
+            </p>
+            <div>
+              <a href="mailto:your-email@example.com" class="inline-flex items-center gap-3 pl-6 pr-2 py-2 rounded-full bg-neutral-900 border border-neutral-700 text-white font-medium text-xs md:text-sm hover:border-brand-orange transition group">
+                Let's Build Something Meaningful
+                <span class="w-7 h-7 rounded-full bg-brand-orange text-white flex items-center justify-center group-hover:translate-x-0.5 transition-transform">
+                  →
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= 3 PROJECTS SHOWCASE (PROBLEM -> FIX) ================= -->
+      <section id="projects" class="px-6 md:px-14 pb-20 bg-brand-dark">
